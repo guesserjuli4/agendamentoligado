@@ -1,0 +1,85 @@
+header{
+    background-color: #3EB3F2;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px; 
+    font-family: outifit;
+    font-size: 25px;
+    color: aliceblue;
+}
+.cards{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.aluno{
+    width: 150px;
+}
+.aluno img{
+    width: 100px;
+}
+.prof{
+    width: 150px;
+}
+.prof img{
+    width: 100px;
+}
+.triagem{
+    width: 150px;
+}
+.triagem img{
+    width: 100px;
+}
+
+.form_cadastro{
+    padding: 50px;
+    position: absolute;
+    top: 350px;
+    right: 350px;
+    background-color: #3EB3F2;
+    border-radius: 50px;
+    width: 500px;
+}
+
+.cad1{
+    text-align: center;
+    color: aliceblue;
+}
+
+label{
+    display: block;
+}
+
+input[type="text"], input[type="email"],input[type="number"],input[type="password"],textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+input[type="submit"]{
+    border: 1px #3EB3F2;
+}
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .aluno, .prof, .triagem, .al2, .prof2, .tri2, .form_cadastro {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        margin: 20px auto;
+    }
+    .form_cadastro {
+        width: 90%;
+        padding: 20px;
+    }
+    input[type="text"], input[type="email"],input[type="number"],input[type="password"],textarea {
+        width: 90%;
+    }
+}
